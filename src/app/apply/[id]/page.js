@@ -7,6 +7,8 @@ export async function generateStaticParams() {
   return vaccant.vaccant.map((vac) => ({
     id: vac._id.toString(),
   }));
+  s;
+  fallback: false;
 }
 
 async function getVaccants(id) {
