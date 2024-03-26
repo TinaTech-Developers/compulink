@@ -16,15 +16,15 @@ import Link from "next/link";
 //     console.log(error);
 //   }
 // }
-
+// `${process.env.API_ROUTE}/api/vaccant`
 function VaccantLists() {
-  const VACCANT_URL = "/api/vaccant";
+  const VACCANT_URL = `${process.env.API_ROUTE}/api/vaccant`;
   const [vaccant, setVaccant] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(VACCANT_URL);
+        const response = await fetch(`www.compulink.co.zw/api/vaccant`);
         const vaccant = await response.json();
         setVaccant(vaccant.vaccant);
       } catch (error) {
@@ -34,7 +34,7 @@ function VaccantLists() {
     fetchData();
   }, []);
 
-  // console.log(vaccant);
+  console.log(VACCANT_URL);
   // const { vaccant } = await getData();
   return (
     <>
