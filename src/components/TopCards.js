@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 
 export default function TopCards() {
-  const GALLERY_URL = "http://localhost:3000/api/gallery-upload";
-  const EVENTS_URL = "http://localhost:3000/api/events";
+  const GALLERY_URL = "/api/gallery-upload";
+  const EVENTS_URL = "/api/events";
   const [gallery, setGallery] = useState([]);
   const [events, setEvents] = useState([]);
 

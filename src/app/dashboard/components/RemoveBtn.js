@@ -9,12 +9,9 @@ export default function RemoveBtn({ id }) {
     const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
-      const res = await fetch(
-        `http://localhost:3000/api/gallery-upload?id=${id}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const res = await fetch(`/api/gallery-upload?id=${id}`, {
+        method: "DELETE",
+      });
 
       if (res.ok) {
         router.refresh();

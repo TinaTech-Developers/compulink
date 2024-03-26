@@ -28,7 +28,7 @@ function ProjectUpload() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/project", {
+      const res = await fetch("/api/project", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

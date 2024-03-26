@@ -7,7 +7,7 @@ import dateFormat from "dateformat";
 import RemoveBtn from "./RemoveBtn";
 
 function EventsList() {
-  const EVENTS_URL = "http://localhost:3000/api/events";
+  const EVENTS_URL = "/api/events";
   const [events, setEvents] = useState([]);
 
   useEffect(() => {

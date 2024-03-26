@@ -18,7 +18,7 @@ import Link from "next/link";
 // }
 
 function VaccantLists() {
-  const VACCANT_URL = "http://localhost:3000/api/vaccant";
+  const VACCANT_URL = "/api/vaccant";
   const [vaccant, setVaccant] = useState([]);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ function VaccantLists() {
               </div>
             </div>
             <Link
-              href={`/apply/${vac._id}`}
+              href={"/apply"}
               className="p-2 hover:bg-gray-500 hover:text-white rounded-lg my-2 "
             >
               Apply Now

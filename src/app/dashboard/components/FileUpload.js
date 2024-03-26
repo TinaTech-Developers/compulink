@@ -29,7 +29,7 @@ export default function FileUpload() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/gallery-upload", {
+      const res = await fetch("/api/gallery-upload", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

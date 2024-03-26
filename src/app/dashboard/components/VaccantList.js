@@ -23,7 +23,7 @@ import { FaEye } from "react-icons/fa6";
 //   return applications;
 // }
 async function VaccantList() {
-  const APPLICATIONS_URL = "http://localhost:3000/api/applications";
+  const APPLICATIONS_URL = "/api/applications";
   const [applications, setApplications] = useState([]);
 
   useEffect(() => {

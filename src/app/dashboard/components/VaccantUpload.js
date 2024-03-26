@@ -19,7 +19,7 @@ function VaccantUpload() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/vaccant", {
+      const res = await fetch("/api/vaccant", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

@@ -7,7 +7,7 @@ import dateFormat from "dateformat";
 import RemoveBtn from "./RemoveBtn";
 
 function ProjectList() {
-  const PROJECT_URL = "http://localhost:3000/api/project";
+  const PROJECT_URL = "/api/project";
   const [project, setProject] = useState([]);
 
   useEffect(() => {

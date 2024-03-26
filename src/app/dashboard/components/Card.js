@@ -6,7 +6,7 @@ import dateFormat from "dateformat";
 import RemoveBtn from "./RemoveBtn";
 
 function Card() {
-  const URL = "http://localhost:3000/api/gallery-upload";
+  const URL = "/api/gallery-upload";
   const [gallery, setGallery] = useState([]);
 
   useEffect(() => {

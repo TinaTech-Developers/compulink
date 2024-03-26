@@ -5,7 +5,7 @@ import { Doughnut } from "react-chartjs-2";
 Chartjs.register(ArcElement, Tooltip, Legend);
 
 function Chart() {
-  const APPLICATIONS_URL = "http://localhost:3000/api/events";
+  const APPLICATIONS_URL = "/api/events";
   const [events, setEvents] = useState([]);
   const [gallery, setGallery] = useState([]);
   const [applications, setApplications] = useState([]);
@@ -13,7 +13,7 @@ function Chart() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:3000/api/applications");
+      const response = await fetch("/api/applications");
       const applications = await response.json();
       setApplications(applications.applications);
     }
@@ -21,7 +21,7 @@ function Chart() {
   }, []);
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:3000/api/project");
+      const response = await fetch("/api/project");
       const project = await response.json();
       setProject(project.project);
     }

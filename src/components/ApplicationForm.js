@@ -36,7 +36,7 @@ function ApplicationForm({
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/vaccant/${id}`, {
+      const res = await fetch(`/api/vaccant/${id}`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -61,7 +61,7 @@ function ApplicationForm({
       toast.error(" please fill in correct details and try again");
     }
     try {
-      const res = await fetch("http://localhost:3000/api/applications", {
+      const res = await fetch("/api/applications", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
