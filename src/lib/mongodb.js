@@ -12,14 +12,3 @@ export async function connectMongoDB() {
     process.exit(1); // Exit process with failure
   }
 }
-
-// export const connectMongoDB = async () => {
-//   try {
-//     await mongoose.connect(
-//       "mongodb+srv://tinashephiri0:FZWRIex7Uu5DTbig@cluster0.dvzxjl9.mongodb.net/compulink_systems"
-//     );
-//     console.log("Connected to MongoDB");
-//   } catch (error) {
-//     console.log("Error connecting to MongoDB: ", error);
-//   }
-// };

@@ -1,8 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineTimer } from "react-icons/md";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import Link from "next/link";
+
+const getData = async () => {
+  try {
+    const res = await fetch(`${process.env.API_ROUTE}/api/vaccant`, {
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch speakers");
+    }
+
+    return res.json();
+  } catch (error) {
+    console.log("Error loading speakers", error);
+  }
+};
 
 // async function getData() {
 //   try {
@@ -17,25 +33,25 @@ import Link from "next/link";
 //   }
 // }
 // `${process.env.API_ROUTE}/api/vaccant`
-function VaccantLists() {
-  const VACCANT_URL = `${process.env.API_ROUTE}/api/vaccant`;
-  const [vaccant, setVaccant] = useState([]);
+async function VaccantLists() {
+  // const VACCANT_URL = `${process.env.API_ROUTE}/api/vaccant`;
+  // const [vaccant, setVaccant] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch(`www.compulink.co.zw/api/vaccant`);
-        const vaccant = await response.json();
-        setVaccant(vaccant.vaccant);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const response = await fetch(`www.compulink.co.zw/api/vaccant`);
+  //       const vaccant = await response.json();
+  //       setVaccant(vaccant.vaccant);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  //   fetchData();
+  // }, []);
 
-  console.log(VACCANT_URL);
-  // const { vaccant } = await getData();
+  // console.log(VACCANT_URL);
+  const { vaccant } = await getData();
   return (
     <>
       {vaccant?.map((vac) => (

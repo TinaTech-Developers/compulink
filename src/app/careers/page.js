@@ -1,50 +1,15 @@
-"use client";
 import Layout from "@/components/Layout";
 import React from "react";
-import Typewriter from "typewriter-effect";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { BsPersonHearts } from "react-icons/bs";
 import { FaAward } from "react-icons/fa6";
 import Image from "next/image";
 import VaccantLists from "@/components/VaccantLists";
+import VaccantHero from "@/components/VaccantHero";
 function Careers() {
   return (
     <Layout>
-      <div className="w-full h-screen">
-        <div
-          className="bg-scroll bg-cover bg-center
-   bg-no-repeat bg-[url('https://www.analyticsinsight.net/wp-content/uploads/2021/07/Technology-Can-Boost-Your-Business-Productivity.jpg')] w-full h-screen object-cover "
-        >
-          <div className="flex flex-col items-center justify-center bg-scroll bg-center bg-black w-full h-screen bg-opacity-60">
-            <div className=" flex gap-3 text-center text-3xl   text-gray-300 py-4">
-              <span className="font-bold">
-                <Typewriter
-                  options={{
-                    autoStart: true,
-                    loop: true,
-                    delay: 50,
-                    strings: "Welcome to COMPULINK SYSTEMS Careers",
-                  }}
-                  typeSpeed={150}
-                  backSpeed={100}
-                  loop
-                />
-              </span>
-            </div>
-
-            <p className="md:-translate-x-80 px-10 text-white">
-              <span className="text-4xl md:text-6xl font-thin">Join the</span>
-              <br />
-              <span className="text-4xl font-normal text-blue-950">
-                COMPU<span className="text-red-500">LINK</span> team
-              </span>
-              <br />
-              We have fantastic job opportunities for talented people waiting to
-              realise their full potential.
-            </p>
-          </div>
-        </div>
-      </div>
+      <VaccantHero />
       <div className=" flex flex-col items-center justify-center gap-6 h-40 mx-auto ">
         <h1 className="texl-xl md:text-3xl">
           Regional <span className="font-semibold">vaccancies</span>
