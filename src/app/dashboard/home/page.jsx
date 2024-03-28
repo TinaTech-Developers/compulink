@@ -4,7 +4,6 @@ import RecentOrders from "@/components/RecentOrders";
 import TopCards from "@/components/TopCards";
 import React from "react";
 import dynamic from "next/dynamic";
-import VaccantList from "../components/VaccantList";
 
 const BarChart = dynamic(() => import("@/components/BarChart"));
 const Calender = dynamic(() => import("@/components/Calender"));
