@@ -51,10 +51,12 @@ function Event() {
               </h1>
               <h2 className="text-center text-gray-400 ">General</h2>
 
-              <div className="flex items-center justify-center p-4 gap-4 ">
-                <FillButton name={events.date} link="/" />
-                <FillButton name="Register" link="www.evolveictsummit.com" />
-                <p className="p-2 bg-red-600 text-white rounded-3xl">
+              <div className=" grid md:flex items-center justify-center p-4 gap-4 ">
+                <div className="flex items-center justify-center gap-4">
+                  <FillButton name={events.date} link="/" />
+                  <FillButton name="More" link="www.evolveictsummit.com" />
+                </div>
+                <p className="p-2 bg-red-600 text-xs md:text-sm text-white text-center rounded-3xl">
                   {events.venue}
                 </p>
               </div>

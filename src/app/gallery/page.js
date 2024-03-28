@@ -25,12 +25,12 @@ function Gallery() {
           </p>
         </div>
         <div className="col-span-2 gap-6 ">
-          <div className="flex flex-wrap gap-10 mx-12">
+          <div className="flex flex-wrap gap-10 items-center justify-center">
             <GalleryCard />
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-10 py-10 ">
+      <div className="flex flex-col md:flex-wrap items-center justify-center gap-10 py-10  ">
         <GalleryCard1 />
 
         <div className="py-10">

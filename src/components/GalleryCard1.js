@@ -18,13 +18,13 @@ function GalleryCard1() {
   return (
     <>
       {gallery?.map((gallery) => (
-        <div key={gallery._id} className="w-96 h-full border ">
+        <div key={gallery._id} className="w-80 md:w-96 h-full border ">
           <Image
             src={gallery.imageUrl}
             height={400}
             width={500}
             alt=""
-            className="w-96 h-56 object-cover"
+            className="w-80 md:w-96 h-56 object-cover"
           />
           <div className="p-2 ">
             <h1 className=" uppercase text-sm  font-semibold">
