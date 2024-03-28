@@ -35,7 +35,7 @@ import Link from "next/link";
 // }
 // `${process.env.API_ROUTE}/api/vaccant`
 function VaccantLists() {
-  const VACCANT_URL = `${process.env.API_ROUTE}/api/vaccant`;
+  const VACCANT_URL = "/api/vaccant";
   const [vaccant, setVaccant] = useState([]);
 
   useEffect(() => {
