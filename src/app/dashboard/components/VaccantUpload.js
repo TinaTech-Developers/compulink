@@ -46,84 +46,90 @@ function VaccantUpload() {
 
   return (
     <div className="flex flex-col items-center -mt-28">
-      <div className="  mx-auto flex flex-col items-center justify-center h-full w-2/3 md:w-2/4  rounded-lg border border-blue-500 mt-32">
-        <form className="flex flex-col w-3/5 gap-4">
-          <h1 className="text-center p-6 text-xl font-semibold">Post Vacant</h1>
-          <div>
-            <input
-              value={jobTitle}
-              onChange={(e) => seJobTitle(e.target.value)}
-              type="text"
-              placeholder="Job title.."
-              className="w-full p-2 outline-none bg-gray-100"
-            />
-          </div>
-          <div>
-            <input
-              value={branch}
-              onChange={(e) => setBranch(e.target.value)}
-              type="text"
-              placeholder="Branch"
-              className="w-full p-2 outline-none bg-gray-100"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label>Contract</label>
-            <select
-              value={contract}
-              onChange={(e) => setContract(e.target.value)}
-              id="departments"
-              className="w-full p-2 outline-none bg-gray-100"
-            >
-              <option value={"Fulltime"}>Fulltime</option>
-              <option value={"Graduate Trainee"}>Graduate Trainee</option>
-              <option value={"Attachee"}>Attachee</option>
-              <option value={"Contract"}>Contract</option>
-            </select>
-          </div>
-          <div className="flex flex-col gap-2 ">
-            <label>Department</label>
-            <select
-              value={department}
-              onChange={(e) => setDepartment(e.target.value)}
-              id="cars"
-              className="w-full p-2 outline-none bg-gray-100"
-            >
-              <option value={"Software"}>Software</option>
-              <option value={"Networking"}>Networking</option>
-              <option value={"Procurement"}>Procurement</option>
-              <option value={"Finance"}>Finance</option>
-              <option value={"Sales"}>Sales</option>
-              <option value={"HR"}>HR</option>
-            </select>
-          </div>
-          <div className="grid grid-cols-4 gap-4 ">
-            <textarea
-              value={duties}
-              onChange={(e) => setDuties(e.target.value)}
-              rows={5}
-              placeholder="Job Description / Duties"
-              className="bg-gray-100 py-2 px-4  w-full outline-none border-none col-span-4"
-            ></textarea>
-          </div>
-          <div className="grid grid-cols-4 gap-4 ">
-            <textarea
-              value={qualifications}
-              onChange={(e) => setQualifications(e.target.value)}
-              rows={5}
-              placeholder="Qualifications"
-              className="bg-gray-100 py-2 px-4  w-full outline-none border-none col-span-4"
-            ></textarea>
-          </div>
+      <div className="  mx-32 px-12 flex flex-col items-center justify-center h-full w-full md:w-full mt-32">
+        <form className="flex flex-col w-full  gap-4 ">
+          <h1 className=" text-4xl ">Vaccant</h1>
+          <div className="  md:flex gap-10">
+            <div className="w-[50%] flex flex-col gap-10">
+              <div className="">
+                <input
+                  value={jobTitle}
+                  onChange={(e) => seJobTitle(e.target.value)}
+                  type="text"
+                  placeholder="Job title.."
+                  className="w-full p-2 outline-none bg-gray-100 border border-gray-700"
+                />
+              </div>
+              <div>
+                <input
+                  value={branch}
+                  onChange={(e) => setBranch(e.target.value)}
+                  type="text"
+                  placeholder="Branch"
+                  className="w-full p-2 outline-none bg-gray-100 border border-gray-700"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label>Contract</label>
+                <select
+                  value={contract}
+                  onChange={(e) => setContract(e.target.value)}
+                  id="departments"
+                  className="w-full p-2 outline-none bg-gray-100 border border-gray-700"
+                >
+                  <option value={"Fulltime"}>Fulltime</option>
+                  <option value={"Graduate Trainee"}>Graduate Trainee</option>
+                  <option value={"Attachee"}>Attachee</option>
+                  <option value={"Contract"}>Contract</option>
+                </select>
+              </div>
+              <div className="flex flex-col gap-2 ">
+                <label>Department</label>
+                <select
+                  value={department}
+                  onChange={(e) => setDepartment(e.target.value)}
+                  id="cars"
+                  className="w-full p-2 outline-none bg-gray-100 border border-gray-700"
+                >
+                  <option value={"Software"}>Software</option>
+                  <option value={"Networking"}>Networking</option>
+                  <option value={"Procurement"}>Procurement</option>
+                  <option value={"Finance"}>Finance</option>
+                  <option value={"Sales"}>Sales</option>
+                  <option value={"HR"}>HR</option>
+                </select>
+              </div>
+            </div>
+            <div className="w-[50%] flex flex-col gap-10">
+              <div className="grid grid-cols-4 gap-4 border border-gray-700 ">
+                <textarea
+                  value={duties}
+                  onChange={(e) => setDuties(e.target.value)}
+                  rows={5}
+                  placeholder="Job Description / Duties"
+                  className="bg-gray-100 py-2 px-4  w-full outline-none border-none col-span-4 "
+                ></textarea>
+              </div>
+              <div className="grid grid-cols-4 gap-4 border border-gray-700">
+                <textarea
+                  value={qualifications}
+                  onChange={(e) => setQualifications(e.target.value)}
+                  rows={5}
+                  placeholder="Qualifications"
+                  className="bg-gray-100 py-2 px-4  w-full outline-none border-none col-span-4 "
+                ></textarea>
+              </div>
 
-          <div>
-            <input
-              value={salary}
-              onChange={(e) => setSalary(e.target.value)}
-              type="text"
-              placeholder="Salary (Optional)"
-              className="w-full p-2 outline-none bg-gray-100"
-            />
+              <div>
+                <input
+                  value={salary}
+                  onChange={(e) => setSalary(e.target.value)}
+                  type="text"
+                  placeholder="Salary (Optional)"
+                  className="w-full p-2 outline-none bg-gray-100 border border-gray-700"
+                />
+              </div>
+            </div>
           </div>
           <button className="w-[5rem]">
             <FillButton name={"Post"} link={""} onClick={handleSubmit} />

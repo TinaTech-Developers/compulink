@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa6";
@@ -22,7 +22,7 @@ import { FaEye } from "react-icons/fa6";
 //   const applications = await res.json();
 //   return applications;
 // }
-async function VaccantList() {
+function VaccantList() {
   const APPLICATIONS_URL = "/api/applications";
   const [applications, setApplications] = useState([]);
 

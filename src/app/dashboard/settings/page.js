@@ -47,7 +47,9 @@ function Settings() {
               <VaccantUpload />
             </div>
             <div className={toggle == 2 ? "block" : "hidden"}>
-              <div className="p-6">{/* <VaccantList /> */}</div>
+              <div className="p-6">
+                <VaccantList />
+              </div>
             </div>
             <div className={toggle == 3 ? "block" : "hidden"}>
               <Uploads />

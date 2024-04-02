@@ -105,7 +105,7 @@ function ProjectUpload() {
             type="text"
             name="title"
             placeholder="Event title"
-            className="col-span-5 outline-none border  p-2   text-gray-700"
+            className="col-span-5 outline-none  p-2 text-gray-700 border border-gray-400"
           />
         </div>
         <div className="grid grid-cols-5 gap-4 py-2">
@@ -115,10 +115,10 @@ function ProjectUpload() {
             placeholder="image link"
             type="text"
             name="image link"
-            className="col-span-5 outline-none border   text-gray-700 p-2"
+            className="col-span-5 outline-none   text-gray-700 border border-gray-400 p-2"
           />
         </div>
-        <div className="grid grid-cols-5 gap-4  pb-5">
+        <div className="grid grid-cols-5 gap-4 border border-gray-400">
           <textarea
             onChange={(e) => setDescription(e.target.value)}
             placeholder="description"
@@ -127,7 +127,7 @@ function ProjectUpload() {
             name="description"
           ></textarea>
         </div>
-        <button className=" flex items-end justify-end z-20">
+        <button className=" flex items-end justify-end z-20 pt-5">
           <FillButton name={"Save"} link={""} onClick={handleSubmit} />
         </button>
         <ToastContainer />
