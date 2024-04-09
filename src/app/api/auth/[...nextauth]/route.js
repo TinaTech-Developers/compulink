@@ -53,10 +53,10 @@ const handler = NextAuth(authOptions);
 // Export the handler for both GET and POST requests
 export { handler as GET, handler as POST };
 
-export const generateStaticParams = () => {
-  // Define any static params needed for authentication routes
-  return {
-    // Example: if you need to provide the provider to the route
-    providers: ["credentials"],
-  };
-};
+// export const generateStaticParams = () => {
+//   // Define any static params needed for authentication routes
+//   return {
+//     // Example: if you need to provide the provider to the route
+//     providers: ["credentials"],
+//   };
+// };
