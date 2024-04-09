@@ -18,7 +18,7 @@ function Header() {
         <h1>
           Welcome Back, <span className="font-bold">{session?.user?.name}</span>
         </h1>
-        <Link href={"/dashboard"}>
+        <Link href={"/"}>
           <button
             onClick={() => signOut()}
             className="text-red-400 text-sm hover:text-red-800"

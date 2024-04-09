@@ -11,26 +11,26 @@ export default function LoginForm() {
 
   const router = useRouter();
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   try {
-  //     const res = await signIn("credentials", {
-  //       email,
-  //       password,
-  //       redirect: false,
-  //     });
+    try {
+      const res = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
 
-  //     if (res.error) {
-  //       setError("Please enter valid credentials");
-  //       return;
-  //     }
+      if (res.error) {
+        setError("Please enter valid credentials");
+        return;
+      }
 
-  //     router.replace("dashboard/home");
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+      router.replace("home");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="grid place-items-center h-screen">
@@ -50,7 +50,10 @@ export default function LoginForm() {
             placeholder="Password"
             className="p-2 rounded-md outline-none bg-gray-200 text-black"
           />
-          <button className="bg-blue-600 text-white font-bold cursor-pointer px-6 py-2">
+          <button
+            onClick={handleSubmit}
+            className="bg-blue-600 text-white font-bold cursor-pointer px-6 py-2"
+          >
             Login
           </button>
           {error && (

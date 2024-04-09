@@ -50,7 +50,7 @@ function VaccantUpload() {
         <form className="flex flex-col w-full  gap-4 ">
           <h1 className=" text-4xl ">Vaccant</h1>
           <div className="  md:flex gap-10">
-            <div className="w-[50%] flex flex-col gap-10">
+            <div className=" w-full md:w-[50%] flex flex-col gap-10">
               <div className="">
                 <input
                   value={jobTitle}
@@ -70,7 +70,7 @@ function VaccantUpload() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label>Contract</label>
+                <label className="font-semibold">Contract</label>
                 <select
                   value={contract}
                   onChange={(e) => setContract(e.target.value)}
@@ -84,7 +84,7 @@ function VaccantUpload() {
                 </select>
               </div>
               <div className="flex flex-col gap-2 ">
-                <label>Department</label>
+                <label className="font-semibold">Department</label>
                 <select
                   value={department}
                   onChange={(e) => setDepartment(e.target.value)}
