@@ -4,7 +4,7 @@ import React from "react";
 
 function Login() {
   return (
-    <div>
+    <div className="flex items-center justify-center mx-auto ">
       <LoginForm />
     </div>
   );
