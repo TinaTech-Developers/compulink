@@ -16,7 +16,7 @@ export default function LoginForm() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 8000);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
