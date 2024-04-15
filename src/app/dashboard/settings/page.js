@@ -23,21 +23,21 @@ function Settings() {
             <Link
               onClick={() => updateToggle(1)}
               href={""}
-              className="flex items-center justify-center gap-1 py-2 px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
+              className="flex items-center justify-center gap-1 py-2 px-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
             >
               Vacancies
             </Link>{" "}
             <Link
               onClick={() => updateToggle(2)}
               href={""}
-              className="py-2 px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
+              className="py-2 px-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
             >
               Applications
             </Link>
             <Link
               onClick={() => updateToggle(3)}
               href={""}
-              className="py-2 px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
+              className="py-2 px-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
             >
               Users
             </Link>
