@@ -23,14 +23,14 @@ function Gallery() {
               <Link
                 onClick={() => updateToggle(1)}
                 href={""}
-                className="flex items-center justify-center gap-1 py-2 px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
+                className="flex items-center justify-center gap-1 py-2 pr-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
               >
                 <MdOutlinePlaylistAdd size={"1.5rem"} /> Gallery
               </Link>{" "}
               <Link
                 onClick={() => updateToggle(2)}
                 href={""}
-                className="py-2 px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
+                className="py-2 px-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white active: focus:text-blue-700 "
               >
                 Gallery List
               </Link>
