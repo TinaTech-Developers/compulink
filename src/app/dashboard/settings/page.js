@@ -23,7 +23,7 @@ function Settings() {
             <Link
               onClick={() => updateToggle(1)}
               href={""}
-              className="flex items-center justify-center gap-1 py-2 px-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
+              className="flex items-center justify-center gap-1 py-2 pr-2 md:px-5 hover:bg-white focus:outline-none focus:bg-white focus:text-blue-700"
             >
               Vacancies
             </Link>{" "}
