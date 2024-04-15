@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaShoppingBag } from "react-icons/fa";
 import dateFormat from "dateformat";
+import Link from "next/link";
 
 export default function RecentOrders() {
   const EVENTS_URL = "/api/events";
@@ -17,7 +18,10 @@ export default function RecentOrders() {
   }, []);
 
   return (
-    <div className="w-full md:w-[70vh] col-span-1 relative h-full m-auto p-4 border rounded-lg bg-white overflow-scroll text-sm">
+    <Link
+      href={"/dashboard/events"}
+      className="w-full md:w-[70vh] col-span-1 relative h-full m-auto p-4 border rounded-lg bg-white overflow-scroll text-sm"
+    >
       <h1>Recent Events</h1>
       {events?.toReversed().map((evt) => (
         <ul key={evt._id}>
@@ -29,12 +33,12 @@ export default function RecentOrders() {
               <p className="text-gray-800 font-bold">{evt.title}</p>
               <p className="text-gray-600 text-sm">{evt.venue}</p>
             </div>
-            <p className="lg:flex md:hidden absolute right-4 pt-6 text-xs">
+            <p className="hidden  md:block absolute right-4 pt-6 text-xs">
               {dateFormat(evt.date)}
             </p>
           </li>
         </ul>
       ))}
-    </div>
+    </Link>
   );
 }
