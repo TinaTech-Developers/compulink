@@ -17,7 +17,7 @@ export default function RecentOrders() {
   }, []);
 
   return (
-    <div className="w-[70vh] col-span-1 relative h-full m-auto p-4 border rounded-lg bg-white overflow-scroll text-sm">
+    <div className="w-full md:w-[70vh] col-span-1 relative h-full m-auto p-4 border rounded-lg bg-white overflow-scroll text-sm">
       <h1>Recent Events</h1>
       {events?.toReversed().map((evt) => (
         <ul key={evt._id}>
