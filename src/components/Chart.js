@@ -65,7 +65,7 @@ function Chart() {
 
   const options = {};
   return (
-    <div className="w-full h-[40vh] mx-20">
+    <div className="w-[40vh] md:w-full h-[40vh] ">
       <Doughnut data={data} options={options}></Doughnut>
     </div>
   );
