@@ -10,10 +10,13 @@ export default function DateCalendarValue() {
   const [value, setValue] = React.useState(dayjs("2022-04-17"));
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto md:w-full md:h-[56vh] text-sm w-80">
+    <div className="flex flex-col items-center justify-center mx-auto md:w-full md:h-[56vh] text-sm ">
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer components={["DateCalendar", "DateCalendar"]}>
-          <DateCalendar defaultValue={Date.dateAdapter} />
+          <DateCalendar
+            className="w-60 md:w-full"
+            defaultValue={Date.dateAdapter}
+          />
         </DemoContainer>
       </LocalizationProvider>
     </div>
