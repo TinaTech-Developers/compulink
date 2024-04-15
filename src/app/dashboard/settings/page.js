@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import VaccantUpload from "../components/VaccantUpload";
 import VaccantList from "../components/VaccantList";
-import Uploads from "../components/Upload";
+// import Uploads from "../components/Upload";
 
 function Settings() {
   const [toggle, setToggle] = useState(1);
@@ -52,7 +52,7 @@ function Settings() {
               </div>
             </div>
             <div className={toggle == 3 ? "block" : "hidden"}>
-              <Uploads />
+              {/* <Uploads /> */}
             </div>
           </div>
         </div>

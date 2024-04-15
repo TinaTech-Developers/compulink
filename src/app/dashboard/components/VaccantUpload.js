@@ -46,11 +46,11 @@ function VaccantUpload() {
 
   return (
     <div className="flex flex-col items-center -mt-28">
-      <div className="  mx-32 px-12 flex flex-col items-center justify-center h-full w-full md:w-full mt-32">
+      <div className="  md:mx-32 px-4 md:px-12 flex flex-col items-center justify-center h-full w-full md:w-full mt-32 gap-">
         <form className="flex flex-col w-full  gap-4 ">
           <h1 className=" text-4xl ">Vaccant</h1>
           <div className="  md:flex gap-10">
-            <div className=" w-full md:w-[50%] flex flex-col gap-10">
+            <div className=" w-full md:w-[50%] flex flex-col gap-4 ">
               <div className="">
                 <input
                   value={jobTitle}
@@ -83,7 +83,7 @@ function VaccantUpload() {
                   <option value={"Contract"}>Contract</option>
                 </select>
               </div>
-              <div className="flex flex-col gap-2 ">
+              <div className="flex flex-col gap-2 pb-6 ">
                 <label className="font-semibold">Department</label>
                 <select
                   value={department}
@@ -100,7 +100,7 @@ function VaccantUpload() {
                 </select>
               </div>
             </div>
-            <div className="w-[50%] flex flex-col gap-10">
+            <div className="md:w-[50%] flex flex-col gap-4 ">
               <div className="grid grid-cols-4 gap-4 border border-gray-700 ">
                 <textarea
                   value={duties}

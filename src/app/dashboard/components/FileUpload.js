@@ -53,8 +53,8 @@ export default function FileUpload() {
   };
 
   return (
-    <div className="grid md:flex gap-10 mx-4 mt-10 pb-20">
-      <div className="border border-gray-500 mt-2 pb-14  w-[50%] h-[22rem] bg-blue-200 p-10">
+    <div className="grid md:flex gap-10 mx-2 mt-10 pb-20">
+      <div className="border border-gray-500 mt-2 pb-14 w-[100%] md:w-[50%] h-[22rem] bg-blue-200 p-10">
         <div className="col-span-full  ">
           <div className="flex justify-between items-center mb-4  ">
             <label
@@ -102,7 +102,7 @@ export default function FileUpload() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className=" flex flex-col w-[45rem] h-[100%] px-10 "
+        className=" flex flex-col w-full md:w-[45rem] h-[100%] md:px-10  "
       >
         <div className="grid grid-cols-5 w- gap-4 pt-4">
           <input
