@@ -56,12 +56,14 @@ export default function LoginForm() {
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="Email"
+            name="email"
             className="p-2 border border-b-2 outline-none"
           />
           <input
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="Password"
+            name="password"
             className="p-2 border border-b-2 outline-none"
           />
           <button
