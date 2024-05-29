@@ -3,6 +3,7 @@ import User from "@/models/user";
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
+import { callback } from "chart.js/dist/helpers/helpers.core";
 
 // Define environment variables
 const NEXTAUTH_SECRET = process.env.NEXTAUTH_SECRET;
@@ -38,8 +39,20 @@ const authOptions = {
       },
     }),
   ],
+
   session: {
     strategy: "jwt",
+  },
+  callback: {
+    jwt: async ({ token, user }) => {
+      user && (token.user = user);
+      return user;
+    },
+    session: async ({ session, token }) => {
+      const user = token.user;
+      session.user = user;
+      return session;
+    },
   },
   secret: NEXTAUTH_SECRET, // Use the defined environment variable
   pages: {
@@ -53,10 +66,4 @@ const handler = NextAuth(authOptions);
 // Export the handler for both GET and POST requests
 export { handler as GET, handler as POST };
 
-// export const generateStaticParams = () => {
-//   // Define any static params needed for authentication routes
-//   return {
-//     // Example: if you need to provide the provider to the route
-//     providers: ["credentials"],
-//   };
-// };
+//

@@ -47,7 +47,7 @@ function ProjectUpload() {
   };
 
   return (
-    <div className="grid md:flex gap-10 mx-2 mt-10 pb-20">
+    <div className="grid md:flex gap- mx-2 mt-10 pb-20">
       <div className="border border-gray-500 mt-5 pb-14 w-[76%] md:w-[50%] h-[22rem] bg-blue-200 p-10">
         <div className="col-span-full  ">
           <div className="flex justify-between items-center mb-4  ">

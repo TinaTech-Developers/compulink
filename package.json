@@ -10,10 +10,12 @@
     "export": "next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mongodb-js/charts-embed-dom": "^3.2.1",
     "@mui/x-date-pickers": "^7.0.0",
+    "@react-google-maps/api": "^2.19.3",
     "@uploadthing/react": "^6.4.0",
     "autoplay": "^0.0.4",
     "axios": "^1.6.8",
@@ -21,6 +23,7 @@
     "chart.js": "^4.4.2",
     "dateformat": "^5.0.3",
     "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
     "emotion": "^11.0.0",
     "flow-bin": "^0.231.0",
     "jsonwebtoken": "^9.0.2",
@@ -29,6 +32,7 @@
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.2",
     "mui": "^0.0.1",
+    "net": "^1.0.2",
     "next": "14.1.4",
     "next-auth": "^4.24.7",
     "nodemailer": "^6.9.12",
