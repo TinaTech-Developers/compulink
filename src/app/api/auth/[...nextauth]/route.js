@@ -3,7 +3,6 @@ import User from "@/models/user";
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
-import { callback } from "chart.js/dist/helpers/helpers.core";
 
 // Define environment variables
 const NEXTAUTH_SECRET = process.env.NEXTAUTH_SECRET;

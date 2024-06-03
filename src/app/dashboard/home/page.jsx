@@ -1,3 +1,4 @@
+"use client";
 import DashbordLayout from "@/components/DashbordLayout";
 import Header from "@/components/Header";
 import RecentOrders from "@/components/RecentOrders";
